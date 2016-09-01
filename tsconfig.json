@@ -21,5 +21,12 @@
   ],
   "atom": {
     "rewriteTsconfig": true
-  }
+  },
+  "files": [
+    "./dev/app.component.ts",
+    "./dev/boot.ts",
+    "./dev/mastermind/board.component.ts",
+    "./dev/mastermind/navigation.component.ts",
+    "./dev/mastermind/setup.component.ts"
+  ]
 }

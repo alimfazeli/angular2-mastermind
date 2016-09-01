@@ -1,0 +1,10 @@
+<navigation></navigation>
+<!--  Main UI -->
+<div class="container">
+    <div class="row">
+        <h1>Mastermind game, built with Angular2</h1>
+        <game-setup [(username)]="gameData.name" (onUpdate)="onUpdate($event)"></game-setup>
+
+        <game-board [username]="gameData.name" *ngIf="gameData.name.length > 2" (WinEvent)="winHandler(event)"></game-board>
+    </div>
+</div>

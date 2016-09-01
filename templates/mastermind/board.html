@@ -1,0 +1,33 @@
+<section class="panel panel-default">
+    <div class="panel-heading">
+        Welcome {{name}}
+
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped">
+            <tr *ngFor="#attempt of attempts">
+                <td *ngFor="#color of attempt.answer" class="text-center">
+
+                    <div style="width:60px; height:60px; background-color: {{displayColors[color]}}"></div>
+                </td>
+                <td>
+                    {{attempt.checkResult}}
+                </td>
+            </tr>
+            <tr>
+                <td *ngFor="#item of answer; #i = index ">
+
+                    <select class="form-control"   [(ngModel)]="answer[i]">
+                        <option value="0">Select a color</option>
+                        <option *ngFor="#color of possibleColors" value="{{color}}">{{color}}</option>
+                    </select>
+                    {{ answer[i]}}
+
+                </td>
+                <td>
+                    <button class="btn btn-success" (click)="submitAnswer()">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
