@@ -11,7 +11,7 @@ import {NavigationComponent} from './mastermind/navigation.component';
 
 export class AppComponent {
     gameData = {
-        name: 'Niki'
+        name: ''
     }
 
     onUpdate(name) {
