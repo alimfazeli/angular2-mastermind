@@ -25,8 +25,8 @@
   "files": [
     "./dev/app.component.ts",
     "./dev/boot.ts",
-    "./dev/mastermind/answer.component.ts",
     "./dev/mastermind/board.component.ts",
+    "./dev/mastermind/navigation.component.ts",
     "./dev/mastermind/setup.component.ts"
   ]
 }
