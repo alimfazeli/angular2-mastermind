@@ -9,6 +9,6 @@ export class NavigationComponent implements OnInit{
     user:string;
 
     ngOnInit() {
-        this.user = "niki";
+        
     }
 }
